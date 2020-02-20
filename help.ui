@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>helpDialog</class>
+ <widget class="QDialog" name="helpDialog">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>640</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>640</width>
+    <height>480</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>640</width>
+    <height>480</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Ayuda</string>
+  </property>
+  <widget class="QPushButton" name="closeButton">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>450</y>
+     <width>95</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>MS Shell Dlg 2</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Cerrar</string>
+   </property>
+  </widget>
+  <widget class="QTabWidget" name="helpWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>621</width>
+     <height>431</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="tabPosition">
+    <enum>QTabWidget::North</enum>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="tab_0">
+    <attribute name="title">
+     <string>Guia Rapida</string>
+    </attribute>
+    <widget class="QLabel" name="label_0">
+     <property name="geometry">
+      <rect>
+       <x>15</x>
+       <y>12</y>
+       <width>581</width>
+       <height>361</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Guía Rápida&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;FuzzyACO es un software que combina técnicas de optimización por colonia de hormigas (ACO) y lógica difusa para detectar bandas en uno o más carriles de una imagen DGGE. A continuación se provee una guía rápida para utilizar el programa con sus opciones por defecto.&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;1. Presionar &lt;span style=&quot; font-style:italic;&quot;&gt;Cargar Imagen&lt;/span&gt; para obtener la imagen de interés.&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;2. Opcionalmente, eligiendo &lt;span style=&quot; font-style:italic;&quot;&gt;Dividir en Carriles&lt;/span&gt; puede dividir la imagen marcando los cortes de división y guardarlos separadamente como imágenes. Luego, se carga la división de interés como en el Paso 1.&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;3. Ir a &lt;span style=&quot; font-style:italic;&quot;&gt;Ajustar Parámetros&lt;/span&gt; y presionar el botón Auto para ajustar el número de hormigas a las dimensiones de la imagen.&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;4. Presionar&lt;span style=&quot; font-style:italic;&quot;&gt; Iniciar&lt;/span&gt; para ejecutar el programa. Esto puede tardar varios segundos.&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;5. Una vez desplegado el panel &lt;span style=&quot; font-style:italic;&quot;&gt;Binarizar Imagen&lt;/span&gt;, ajustar y actualizar el valor umbral deseado y guardar la imagen resultante.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="scaledContents">
+      <bool>false</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_1">
+    <attribute name="title">
+     <string>Configuracion</string>
+    </attribute>
+    <widget class="QLabel" name="label_1">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>591</width>
+       <height>361</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Consideraciones Importantes&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;En el directorio del ejecutable del programa deben estar presentes los sub-directorios &lt;span style=&quot; font-style:italic;&quot;&gt;config&lt;/span&gt; y &lt;span style=&quot; font-style:italic;&quot;&gt;resources&lt;/span&gt;. El primero debe contener el archivo &lt;span style=&quot; font-style:italic;&quot;&gt;default.cfg&lt;/span&gt; incluido con la distribución del programa; éste es el archivo de configuración (categorías difusas, reglas difusas y otros parámetros) del software por defecto, y se carga cada vez que se inicia la interfaz. El segundo, contiene elementos gráficos de la interfaz y se recomienda no alterarlo.&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;Se pueden crear archivos de configuración adicionales presionando el botón &lt;span style=&quot; font-style:italic;&quot;&gt;Guardar Configuración&lt;/span&gt;, el cual almacenará el conjunto de categorías, reglas y parámetros activos en el software en ese momento a un archivo de extensión &lt;span style=&quot; font-style:italic;&quot;&gt;.cfg&lt;/span&gt;. Tener presente que de esta manera se puede sobreescribir el archivo &lt;span style=&quot; font-style:italic;&quot;&gt;config/default.cfg&lt;/span&gt; si no se tiene cuidado. Para cargar un archivo de configuración existente, utilizar la opción &lt;span style=&quot; font-style:italic;&quot;&gt;Cargar Configuración&lt;/span&gt;.&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;Si bien los archivos de configuración pueden ser editados a través de un editor de texto, se recomienda hacerlo directamente desde el programa para preservar la integridad del conjunto de categorías, reglas y parámetros considerado.&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;Cada vez que se ejecuta el programa se agrega al final del archivo de texto &lt;span style=&quot; font-style:italic;&quot;&gt;runlog.txt&lt;/span&gt; el tiempo en segundos que tomó dicha ejecución. Si dicho archivo no está presente en el directorio del programa, se creará automáticamente.&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Cargar Configuración&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;Mediante este botón se carga un archivo de configuración &lt;span style=&quot; font-style:italic;&quot;&gt;.cfg&lt;/span&gt;. Esta acción reemplazará los parámetros, categorías y reglas difusas utilizadas hasta ese momento por aquellas contenidas en el archivo &lt;span style=&quot; font-style:italic;&quot;&gt;.cfg&lt;/span&gt; seleccionado.&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Guardar Configuración&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;Con este botón se puede almacenar la configuración actual de parámetros, categorías y reglas difusas a un archivo de configuración &lt;span style=&quot; font-style:italic;&quot;&gt;.cfg&lt;/span&gt;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="scaledContents">
+      <bool>false</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_2">
+    <attribute name="title">
+     <string>Imagen</string>
+    </attribute>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>581</width>
+       <height>361</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Cargar Imagen&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;Este botón abre un cuadro de diálogo para escoger la imagen a ser procesada por el programa o propiciar su división en carriles. Se aceptan los formatos &lt;span style=&quot; font-style:italic;&quot;&gt;.png&lt;/span&gt;, &lt;span style=&quot; font-style:italic;&quot;&gt;.jpg&lt;/span&gt; y &lt;span style=&quot; font-style:italic;&quot;&gt;.bmp&lt;/span&gt;.&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Dividir en Carriles&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;A través de este panel se puede dividir la imagen ya cargada en el programa en carriles. Para ello, se desplaza el marcador a la posición donde se desea producir el corte y se presiona el botón &lt;span style=&quot; font-style:italic;&quot;&gt;Agregar Carril&lt;/span&gt;. Con el botón &lt;span style=&quot; font-style:italic;&quot;&gt;Deshacer&lt;/span&gt; se elimina (secuencialmente) el último corte realizado, mientras que la opción &lt;span style=&quot; font-style:italic;&quot;&gt;Borrar Todo&lt;/span&gt; los elimina todos. Finalmente, con el botón &lt;span style=&quot; font-style:italic;&quot;&gt;Guardar&lt;/span&gt; se especifica un nombre y un directorio para almacenar las nuevas imágenes correspondientes a cada división, en formato &lt;span style=&quot; font-style:italic;&quot;&gt;.png&lt;/span&gt;. Por ejemplo, si se especifica el nombre 'Carril' y se definieron tres cortes, los segmentos a guardar corresponderán a los archivos 'Carril 0.png', 'Carril 1.png', 'Carril 2.png' y 'Carril 3.png'.&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Binarizar Imagen&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;En este panel se visualiza la imagen binarizada una vez ejecutado el programa.&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;Para cambiar el valor umbral, desplazar el marcardor al valor deseado. Para actualizar la apariencia de la imagen resultante, presionar el botón &lt;span style=&quot; font-style:italic;&quot;&gt;Actualizar&lt;/span&gt;. Para recuperar el valor umbral sugerido por el algoritmo, presionar el botón &lt;span style=&quot; font-style:italic;&quot;&gt;Aplicar Isodata&lt;/span&gt;. Para guardar la imagen mostrada, oprimir el botón &lt;span style=&quot; font-style:italic;&quot;&gt;Guardar&lt;/span&gt;. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="scaledContents">
+      <bool>false</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_3">
+    <attribute name="title">
+     <string>Categorias</string>
+    </attribute>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>581</width>
+       <height>361</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Administrar Categorías Difusas&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;En este panel se pueden agregar o eliminar categorías difusas para cada una de las categorías difusas: &lt;span style=&quot; font-style:italic;&quot;&gt;mRow&lt;/span&gt;, &lt;span style=&quot; font-style:italic;&quot;&gt;mCol&lt;/span&gt;, &lt;span style=&quot; font-style:italic;&quot;&gt;iDiag&lt;/span&gt;, &lt;span style=&quot; font-style:italic;&quot;&gt;edge&lt;/span&gt;; así como modificar los parámetros de sus funciones de pertenencia.&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;Para agregar una categoría difusa a la variable difusa seleccionada, presionar el botón &lt;span style=&quot; font-style:italic;&quot;&gt;más&lt;/span&gt; (+). Esta acción duplicará la categoría difusa seleccionada. Para cambiar su nombre, modificar el campo 'Nombre' y presionar &lt;span style=&quot; font-style:italic;&quot;&gt;Cambiar&lt;/span&gt;. Para mover la categoría difusa a otra variable, seleccionar dicha variable en las opciones de 'Variable' y oprimir &lt;span style=&quot; font-style:italic;&quot;&gt;Cambiar&lt;/span&gt;. Para eliminar una categoría difusa, seleccionarla y presionar el botón &lt;span style=&quot; font-style:italic;&quot;&gt;menos&lt;/span&gt; (-). Notar que cada variable difusa debe contener al menos una categoría difusa. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="scaledContents">
+      <bool>false</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_4">
+    <attribute name="title">
+     <string>Reglas</string>
+    </attribute>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>581</width>
+       <height>361</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Administrar Reglas Difusas&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;Mediante este panel es posible modificar las reglas de inferencia difusa utilizadas para la generación de la información heurística del modelo.&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;Para agregar una regla, presionar el botón &lt;span style=&quot; font-style:italic;&quot;&gt;más&lt;/span&gt; (+) del selector de reglas para duplicar la regla seleccionada. Para eliminar una regla, presionar el botón &lt;span style=&quot; font-style:italic;&quot;&gt;menos&lt;/span&gt; (-) del selector de reglas. Se debe contar con al menos una regla en todo momento.&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;Para agregar una categoría difusa a la regla seleccionada, oprimir el botón &lt;span style=&quot; font-style:italic;&quot;&gt;más&lt;/span&gt; (+) del selector de categorías. Esto duplicará la categoría seleccionada. Para modificarla, escoger una variable y categoría de los campos correspondientes. Para eliminar una categoría, hacer clic en el botón &lt;span style=&quot; font-style:italic;&quot;&gt;menos&lt;/span&gt; (-) del selector de categorías. Solo se pueden eliminar categorías de las variables de entrada (&lt;span style=&quot; font-style:italic;&quot;&gt;mRow&lt;/span&gt;, &lt;span style=&quot; font-style:italic;&quot;&gt;mCol&lt;/span&gt;, &lt;span style=&quot; font-style:italic;&quot;&gt;iDiag&lt;/span&gt;) de esta manera, y de entre éstas debe estar presente al menos una en la regla respectiva. Conversamente, no puede haber más de una categoría de salida (&lt;span style=&quot; font-style:italic;&quot;&gt;edge&lt;/span&gt;) por regla. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="scaledContents">
+      <bool>false</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_5">
+    <attribute name="title">
+     <string>Parametros</string>
+    </attribute>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>581</width>
+       <height>391</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Ajustar Parámetros&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;Auto:&lt;/span&gt; Asigna el número de hormigas recomendado por el modelo según las dimensiones de la imagen.&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;Tipo de Movimiento:&lt;/span&gt; Modifica el criterio de movimiento de cada hormiga. Puede ser &lt;span style=&quot; font-style:italic;&quot;&gt;Determinista&lt;/span&gt; (por defecto) o &lt;span style=&quot; font-style:italic;&quot;&gt;No Determinista&lt;/span&gt;.&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;Tipo de Defusificacion:&lt;/span&gt; Define la manera en que se escoge la intensidad final de cada celda de la matriz heurística en el último paso de defusificación del motor de inferencia difusa. Las opciones en este sentido son SOM (menor del máximo), MOM (media del máximo), LOM (mayor del máximo, por defecto) y COA (centro de área).&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;Hormigas: &lt;/span&gt;Número de hormigas que recorren la imagen en cada ejecución del programa.&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;Ciclos:&lt;/span&gt; Cantidad de iteraciones del algoritmo.&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;Pasos/Ciclo:&lt;/span&gt; Cantidad de veces que se mueve cada hormiga en cada &lt;span style=&quot; font-style:italic;&quot;&gt;Ciclo&lt;/span&gt;.&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;Peso α: &lt;/span&gt;Importancia inicial de la matriz de feromona en el criterio de movimiento de cada hormiga.&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;Peso β:&lt;/span&gt; Importancia inicial de la matriz heurística en el criterio de movimiento de cada hormiga.&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;Máximo Δ: &lt;/span&gt;Umbral de tolerancia de la diferencia entre el mayor y menor valor heurístico de las celdas vecinas de cada hormiga en un determinado momento. Si dicha diferencia es mayor a este umbral, se decrementa &lt;span style=&quot; font-style:italic;&quot;&gt;Peso α&lt;/span&gt; por el valor definido en &lt;span style=&quot; font-style:italic;&quot;&gt;Variación&lt;/span&gt; y se aumenta &lt;span style=&quot; font-style:italic;&quot;&gt;Peso β&lt;/span&gt; por el mismo valor. Situación inversa ocurre si la diferencia es menor al umbral.&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;Variación: Ver &lt;span style=&quot; font-style:italic;&quot;&gt;Máximo Δ&lt;/span&gt;.&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;ρ Local: Tasa de evaporación local de las celdas de la matriz de feromona. Se produce cada vez que se mueve una hormiga.&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;ψ Global: Tasa de evaporación global de la matriz de feromona. Se produce al final de cada &lt;span style=&quot; font-style:italic;&quot;&gt;Ciclo&lt;/span&gt;. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="scaledContents">
+      <bool>false</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <zorder>helpWidget</zorder>
+  <zorder>closeButton</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
